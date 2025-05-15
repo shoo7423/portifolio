@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoo portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+
+            <img src="" alt="shoo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Portifolio</a></li>
+                <li><a href="contact.html">Contact Form</a></li>
+                <li><a href="survey.html">Survey</a></li>
+            </ul>
+        </nav>
+
+        </div>
+        <div id="about">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/css/images/ndesalio.jpg" alt="shoo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Lorem, ipsum dolor Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt velit molestiae voluptate voluptatum quod. Non, ea. Quis nam accusantium repudiandae fugiat recusandae, ex pariatur 
+                        id minima consequuntur beatae earum quibusdam?
+                        sit amet consectetur adipisicing elit. Amet eos quisquam 
+                        repellendus autem consectetur ex est architecto recusandae saepe dolores! Minus quos molestias,
+                         magni laborum amet sequi deleniti et sed.</p>
+                         <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Eduaction</p>
+                         </div>
+                         <div class="tab-content active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Design App Interface</li>
+                                <li><span>Web development</span><br>Design App Interface</li>
+                                <li><span>App development</span><br>Building Android & ios apps</li>
+                            </ul>
+                         </div>
+                         <div class="tab-content" id="experience">
+                            <ul>
+                                <li><span>2025 - current</span><br>Design App training at UDOM</li>
+                                <li><span>2024-2025</span><br>Design App Interface at UDOM</li>
+                                <li><span>2023-2024</span><br>Building Android & ios apps UDOM</li>
+                            </ul>
+                         </div>
+                         <div class="tab-content" id="education"> 
+                            <ul>
+                                <li><span>2023</span><br>UI/UX Design training at UDOM</li>
+                                <li><span>2024</span><br>Design App training at UDOM</li>
+                                <li><span>2025</span><br>Building Android & ios apps training at UDOM</li>
+                            </ul>
+                         </div>
+                </div>
+            </div>
+        </div>
+    
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontent = document.getElementsByClassName("tab-content");
+
+            function opentab(tabname){
+
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+
+                for(tabcontents of tabcontent){
+                    tabcontents.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add('active-link');
+                document.getElementById(tabname).classList.add('active-tab')
+            }
+        </script>
+           <footer>
+            <p>&copy; 2025 Ndesalio. All rights reserved.</p>
+        </footer>
+</body>
+</html>
