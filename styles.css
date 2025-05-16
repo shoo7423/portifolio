@@ -56,10 +56,9 @@ nav ul li a:hover::after{
   flex-direction: column;
   column-gap: 2px;
 }
-.video{
+.vide{
   margin-top: 90px;
 }
-
 .intro2 img{
   margin-right: 20%;
 }
@@ -239,7 +238,7 @@ footer{
   text-align: center;
   background: #262626;
   font-weight: 300;
- margin-top: 30%;
+  margin-top: 30%;
 }
 
 /* ---------------survey----------------------- */
